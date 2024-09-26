@@ -13,16 +13,5 @@ public class InputController : BaseController<InputController>
         {
             OnLPressed?.Invoke();
         }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Pause();
-        }
-    }
-
-    public void Pause()
-    {
-        // pauseMenu.SetActive(true);
-        Time.timeScale = 0;
     }
 }
