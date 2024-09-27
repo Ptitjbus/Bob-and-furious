@@ -12,13 +12,20 @@ public class UIController : BaseController<UIController>
     // Start is called before the first frame update
     void Start()
     {
-        // on ajoute la fonction TogglePauseScreen à l'événement OnPPressed
+        // add the TogglePauseScreen function to the OnPPressed event
         InputController.Instance().OnPPressed += TogglePauseScreen;
     }
 
+    // quit the game
+    public void Quit()
+    {
+        Application.Quit();
+    }
 
+    // show the pause screen
     void TogglePauseScreen()
     {
+        // if the popup is already open, we close it
         CloseAndDestropPopup();
 
         if (_popUpContainer == null)
@@ -27,20 +34,20 @@ public class UIController : BaseController<UIController>
             _popUpContainer.transform.SetParent(MainCanvas);
             _popUpContainer.transform.localScale = Vector3.one;
             _popUpContainer.transform.localPosition = Vector3.zero;
+
+            // we unlock the cursor
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 
+    // close the popup
     void CloseAndDestropPopup()
     {
         if (_popUpContainer != null)
         {
+            Cursor.visible = false;
             GameObject.Destroy(_popUpContainer);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
