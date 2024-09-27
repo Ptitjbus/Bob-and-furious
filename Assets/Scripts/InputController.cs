@@ -6,7 +6,7 @@ public class InputController : BaseController<InputController>
 {
     public delegate void InputEvent();
     public event InputEvent OnLPressed;
-    public event InputEvent OnPPressed;
+    public event InputEvent OnEscapePressed;
 
 
 
@@ -19,9 +19,9 @@ public class InputController : BaseController<InputController>
         }
 
         // ecouteur de la touche P
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            OnPPressed?.Invoke();
+            OnEscapePressed?.Invoke();
         }
     }
 }
