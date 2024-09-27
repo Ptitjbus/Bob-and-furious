@@ -1,5 +1,5 @@
 Hello !
-Bienvenue sur notre jeu : * Bob And Furious *
+Bienvenue sur notre jeu "Bob And Furious"
 
 # Notre jeu : 
 Vous êtes un étudiant qui a un peu trop bu la veille et va être en retard pour les cours si il ne part pas dans le temps imparti. Vous devez y aller vite mais d'abord pour devez retrouver vos lunettes et préparer votre sac !
