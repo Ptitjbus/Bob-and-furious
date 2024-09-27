@@ -16,7 +16,9 @@ Avoir tous les objets pour aller en cours avant la fin du temps.
 
 # Initialisation du projet :
 -> Importer "TMP Essentials"
+
 -> Importer l'asset "Free: House Interior" - https://assetstore.unity.com/packages/3d/props/interior/free-house-interior-223416
+
 -> Importer l'asset "Food FREE - Low Poly Asset Pack by ithappy" - https://assetstore.unity.com/packages/3d/props/food/food-free-low-poly-asset-pack-by-ithappy-260726
 
 L'importation n'est pas complète ! Il faut ensuite 
