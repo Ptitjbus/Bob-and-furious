@@ -8,6 +8,8 @@ public class SpawnerController : BaseController<SpawnerController>
     public delegate void ObjectSpawnedEvent(CollectableObject collectableObject);
     public event ObjectSpawnedEvent OnObjectSpawned;
 
+    public int spawnCount = 5;
+
     [Header("Liste des Presets")]
     public List<CollectableObjectPreset> objectsToSpawn;
 
@@ -19,16 +21,16 @@ public class SpawnerController : BaseController<SpawnerController>
     }
 
     void SpawnObjects() {
-        if (objectsToSpawn.Count < 5 || spawnPoints.Count < 5) {
+        if (objectsToSpawn.Count < spawnCount || spawnPoints.Count < spawnCount) {
             Debug.LogWarning("Il n'y a pas assez d'objets ou de points de spawn disponibles.");
             return;
         }
 
-        // Sélectionner aléatoirement 5 objets uniques dans la liste des prefabs
-        List<CollectableObjectPreset> selectedObjects = GetRandomSelection(objectsToSpawn, 5);
+        // Sélectionner aléatoirement les objets uniques dans la liste des prefabs
+        List<CollectableObjectPreset> selectedObjects = GetRandomSelection(objectsToSpawn, spawnCount);
 
-        // Sélectionner aléatoirement 5 points de spawn uniques
-        List<Transform> selectedSpawnPoints = GetRandomSelection(spawnPoints, 5);
+        // Sélectionner aléatoirement les points de spawn uniques
+        List<Transform> selectedSpawnPoints = GetRandomSelection(spawnPoints, spawnCount);
 
         for (int i = 0; i < selectedObjects.Count; i++) {
             GameObject obj = Instantiate(collectableObject.gameObject, selectedSpawnPoints[i].position, selectedSpawnPoints[i].rotation);

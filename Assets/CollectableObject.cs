@@ -5,7 +5,7 @@ public class CollectableObject : MonoBehaviour
     public CollectableObjectPreset preset;
     public string id;
 
-    public OnCollectStruct onCollect;
+    public OnEventStruct onCollect;
 
     [SerializeField] private MeshFilter meshFilter;
     [SerializeField] private MeshRenderer meshRenderer;
