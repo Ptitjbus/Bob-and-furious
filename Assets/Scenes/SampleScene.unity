@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731716, g: 0.13414738, b: 0.121078566, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2658,28 +2658,13 @@ PrefabInstance:
     - target: {fileID: 22929563581305042, guid: b8b56974ad3cd1c4faf02da78b4e022c,
         type: 3}
       propertyPath: m_Name
-      value: Glasses Variant
+      value: Collectable Glasses Variant
       objectReference: {fileID: 0}
     - target: {fileID: 437188683856519321, guid: b8b56974ad3cd1c4faf02da78b4e022c,
         type: 3}
       propertyPath: volumeEffect
       value: 
       objectReference: {fileID: 832575518}
-    - target: {fileID: 1929589794156591977, guid: b8b56974ad3cd1c4faf02da78b4e022c,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1929589794156591977, guid: b8b56974ad3cd1c4faf02da78b4e022c,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1929589794156591977, guid: b8b56974ad3cd1c4faf02da78b4e022c,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1929589794156591977, guid: b8b56974ad3cd1c4faf02da78b4e022c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2730,12 +2715,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -180
       objectReference: {fileID: 0}
-    - target: {fileID: 4200237502273435001, guid: b8b56974ad3cd1c4faf02da78b4e022c,
-        type: 3}
-      propertyPath: preset
-      value: 
-      objectReference: {fileID: 11400000, guid: b7e221a0fa03a914e97bf55dd61607d6,
-        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
