@@ -12,11 +12,10 @@ public class LightController : MonoBehaviour
     void Start()
     {
         flashlight.gameObject.SetActive(false);
-        InputController.Instance().OnLPressed += ToggleFlashlight;
+        InputController.Instance().OnFPressed += ToggleFlashlight;
     }
 
-    private void ToggleFlashlight()
-    {
+    public void ToggleFlashlight() {
         flashlight.gameObject.SetActive(!flashlight.gameObject.activeSelf);
     }
 
