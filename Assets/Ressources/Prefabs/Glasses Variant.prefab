@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8732281512135973643
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3988036060753840037, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988036060753840037, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4856417533527027314, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: preset
+      value: 
+      objectReference: {fileID: 11400000, guid: b7e221a0fa03a914e97bf55dd61607d6,
+        type: 2}
+    - target: {fileID: 4856417533527027314, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: onCollect
+      value: 
+      objectReference: {fileID: 437188683856519321}
+    - target: {fileID: 4856417533527027314, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: meshCollider
+      value: 
+      objectReference: {fileID: 5294774404590993468}
+    - target: {fileID: 7199017700121600098, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.7042
+      objectReference: {fileID: 0}
+    - target: {fileID: 7199017700121600098, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3254
+      objectReference: {fileID: 0}
+    - target: {fileID: 7199017700121600098, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.5211
+      objectReference: {fileID: 0}
+    - target: {fileID: 7199017700121600098, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.28212115
+      objectReference: {fileID: 0}
+    - target: {fileID: 7199017700121600098, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.2240281
+      objectReference: {fileID: 0}
+    - target: {fileID: 7199017700121600098, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.64838845
+      objectReference: {fileID: 0}
+    - target: {fileID: 7199017700121600098, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.6706799
+      objectReference: {fileID: 0}
+    - target: {fileID: 7199017700121600098, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7199017700121600098, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7199017700121600098, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8754502431612406745, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Glasses Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3988036060753840037, guid: f4005b2760e6c8c47830bb4dde6027a0, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8754502431612406745, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 437188683856519321}
+    - targetCorrespondingSourceObject: {fileID: 8754502431612406745, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5294774404590993468}
+    - targetCorrespondingSourceObject: {fileID: 8754502431612406745, guid: f4005b2760e6c8c47830bb4dde6027a0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2372802930805934674}
+  m_SourcePrefab: {fileID: 100100000, guid: f4005b2760e6c8c47830bb4dde6027a0, type: 3}
+--- !u!1 &22929563581305042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8754502431612406745, guid: f4005b2760e6c8c47830bb4dde6027a0,
+    type: 3}
+  m_PrefabInstance: {fileID: 8732281512135973643}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &437188683856519321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22929563581305042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f64a6f909d8406b49b373d51f7c77064, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeEffect: {fileID: 0}
+--- !u!64 &5294774404590993468
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22929563581305042}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!65 &2372802930805934674
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22929563581305042}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1332789, y: 0.15822463, z: 0.073788024}
+  m_Center: {x: 0.048524305, y: 0.011204796, z: 0.043398432}

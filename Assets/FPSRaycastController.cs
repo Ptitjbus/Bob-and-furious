@@ -24,7 +24,13 @@ public class FPSRaycastController : BaseController<FPSRaycastController>
 
                 // When the player presses the E key, the object is picked up
                 if (Input.GetKeyDown(KeyCode.E)) {
-                    OnObjectPicked?.Invoke(lastHitObject.gameObject.GetComponent<CollectableObject>().id);
+                    CollectableObject collectableObject = lastHitObject.GetComponent<CollectableObject>();
+                    if (collectableObject.id != null) {
+                        OnObjectPicked?.Invoke(collectableObject.id);
+                    }
+                    if(collectableObject.onCollect != null) {
+                        collectableObject.onCollect.OnCollect();
+                    }
                     lastHitObject.SetActive(false);
                 }
                 UIManager.Instance().interractHelper.SetActive(true);

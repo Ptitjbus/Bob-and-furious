@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51ddb936b44715841a6fce8380ccb638, type: 3}
-  m_Name: CocktailGlassPreset
+  m_Name: Glasses
   m_EditorClassIdentifier: 
-  objectName: Verre a cocktail
-  prefab: {fileID: 919132149155446097, guid: 3f99848e2dea54c44bd892c8b71bf04e, type: 3}
+  objectName: Lunettes
+  prefab: {fileID: 7945688202235586391, guid: 6e69a9912e5d0fa4d805ac74c014145c, type: 3}
