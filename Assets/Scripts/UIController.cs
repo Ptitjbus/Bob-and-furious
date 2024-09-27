@@ -25,6 +25,7 @@ public class UIController : BaseController<UIController>
         {
             _popUpContainer = Instantiate(Resources.Load("UI/PopUpContainer")) as GameObject;
             _popUpContainer.transform.SetParent(MainCanvas);
+            _popUpContainer.transform.localScale = Vector3.one;
             _popUpContainer.transform.localPosition = Vector3.zero;
         }
     }
