@@ -10,6 +10,7 @@ public class FPSRaycastController : BaseController<FPSRaycastController>
     [SerializeField] Camera playerCamera;
 
     AudioController audioController;
+    public bool isInTrigger = false;
 
     private void Awake()
     {
@@ -40,23 +41,23 @@ public class FPSRaycastController : BaseController<FPSRaycastController>
                         OnObjectPicked?.Invoke(collectableObject.id);
                     }
                     if(collectableObject.onCollect != null) {
-                        collectableObject.onCollect.OnCollect();
+                        collectableObject.onCollect.OnEvent();
                     }
                     audioController.PlaySFX(audioController.collectable);
                     lastHitObject.SetActive(false);
                 }
-                UIManager.Instance().interractHelper.SetActive(true);
+                UIController.Instance().interractHelper.SetActive(true);
             }
             else
             {
                 lastHitObject = null;
-                UIManager.Instance().interractHelper.SetActive(false);
+                UIController.Instance().interractHelper.SetActive(isInTrigger);
             }
         }
         else
         {
             lastHitObject = null;
-            UIManager.Instance().interractHelper.SetActive(false);
+            UIController.Instance().interractHelper.SetActive(isInTrigger);
         }
     }
 

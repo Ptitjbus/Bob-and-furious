@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimerController : BaseController<TimerController>
 {
@@ -9,35 +8,36 @@ public class TimerController : BaseController<TimerController>
     [SerializeField] float remainingTime;
     AudioController audioController;
 
-    private void Awake()
-    {
+    private void Awake() {
         audioController = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioController>();
     }
 
 
-    void Start()
-    {
+    void Start() {
         // on ajoute la fonction TogglePause à l'événement OnEscapePressed
         InputController.Instance().OnEscapePressed += TogglePause;
     }
 
-    private void TogglePause()
-    {
+    private void TogglePause() {
         Time.timeScale = Time.timeScale == 0 ? 1 : 0;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (remainingTime > 0)
-        {
-            remainingTime -= Time.deltaTime;
+    void Update() {
+        // decrease the remaining time
+        remainingTime -= Time.deltaTime;
+
+        // update the timer color text
+        if (remainingTime < 10 && remainingTime > 0) {
+            timerText.color = Color.red;
         }
-        else if (remainingTime < 0)
-        {
+        // if the remaining time is less than 0, we stop the timer
+        else if (remainingTime < 0) {
             remainingTime = 0;
             audioController.PlaySFX(audioController.reveil);
-            timerText.color = Color.red;
+
+            // change the scene
+            SceneManager.LoadSceneAsync(3);
         }
 
         int minutes = Mathf.FloorToInt(remainingTime / 60);
