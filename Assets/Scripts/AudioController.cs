@@ -18,12 +18,29 @@ public class AudioController : BaseController<AudioController>
     public AudioClip lightSwitch;
 
 
-    private void Start()
+    float timerAudio = 7.0f;
+    float timerBaillement = 5.0f;
+    public void Start()
     {
-        musicSource.clip = reveil;
+        PlaySFX(reveil);
+        StartCoroutine(PlaySFXAfterDelay());
+        StartCoroutine(PlayMusicAfterDelay());
+        musicSource.clip = background;
+    }
+
+    // play the music after a delay
+    private IEnumerator PlaySFXAfterDelay()
+    {
+        yield return new WaitForSeconds(timerBaillement);
+        PlaySFX(reveilBaillement);
+    }
+    private IEnumerator PlayMusicAfterDelay()
+    {
+        yield return new WaitForSeconds(timerAudio);
         musicSource.Play();
     }
 
+    // play the SFX
     public void PlaySFX(AudioClip clip)
     {
         SFXSource.PlayOneShot(clip);
