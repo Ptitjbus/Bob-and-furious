@@ -3,7 +3,7 @@ Hello !
 Ceci est un projet unity fait aux Gobelins
 
 # Notre jeu : 
-Vous êtes un étudiant qui a un peu trop bu la veille et va être en retard pour les cours si il ne part pas dans le temps imparti. Vous devez y aller vite mais avec les 5 objets indiqués dans votre sac.
+Vous êtes un étudiant qui a un peu trop bu la veille et va être en retard pour les cours si il ne part pas dans le temps imparti. Vous devez y aller vite mais d'abord pour devez retrouver vos lunettes et préparer votre sac !
 
 ## But :
 Avoir tous les objets pour aller en cours avant la fin du temps.
