@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioController : BaseController<AudioController>
@@ -17,30 +15,25 @@ public class AudioController : BaseController<AudioController>
     public AudioClip reveilBaillement;
     public AudioClip lightSwitch;
 
-
+    // delay for the audio
     float timerAudio = 7.0f;
     float timerBaillement = 5.0f;
+
     public void Start()
     {
         PlaySFX(reveil);
-        StartCoroutine(PlaySFXAfterDelay());
-        StartCoroutine(PlayMusicAfterDelay());
-        musicSource.clip = background;
+        StartCoroutine(PlayAudioAfterDelay(SFXSource, reveilBaillement, timerBaillement));
+        StartCoroutine(PlayAudioAfterDelay(musicSource, background, timerAudio));
     }
 
-    // play the music after a delay
-    private IEnumerator PlaySFXAfterDelay()
+    // play the audio after a delay
+    private IEnumerator PlayAudioAfterDelay(AudioSource source, AudioClip clip, float delay)
     {
-        yield return new WaitForSeconds(timerBaillement);
-        PlaySFX(reveilBaillement);
-    }
-    private IEnumerator PlayMusicAfterDelay()
-    {
-        yield return new WaitForSeconds(timerAudio);
-        musicSource.Play();
+        yield return new WaitForSeconds(delay);
+        source.PlayOneShot(clip);
     }
 
-    // play the SFX
+    // play the SFX in the game
     public void PlaySFX(AudioClip clip)
     {
         SFXSource.PlayOneShot(clip);
