@@ -1578,7 +1578,7 @@ GameObject:
   - component: {fileID: 490088946}
   m_Layer: 0
   m_Name: AudioController
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1601,6 +1601,7 @@ MonoBehaviour:
   collectable: {fileID: 8300000, guid: 02f98902d77f7431cb0c64b9fe4744fc, type: 3}
   reveil: {fileID: 8300000, guid: d31480e37a5c540b6bd72c21fa25c08b, type: 3}
   reveilBaillement: {fileID: 8300000, guid: 60c788e17a2294e88b437a27e2b8056e, type: 3}
+  lightSwitch: {fileID: 8300000, guid: 5c9c4551d31164084982851d42eefe97, type: 3}
 --- !u!4 &490088945
 Transform:
   m_ObjectHideFlags: 0

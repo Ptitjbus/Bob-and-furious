@@ -15,6 +15,7 @@ public class AudioController : BaseController<AudioController>
     public AudioClip collectable;
     public AudioClip reveil;
     public AudioClip reveilBaillement;
+    public AudioClip lightSwitch;
 
 
     private void Start()

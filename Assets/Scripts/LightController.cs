@@ -9,13 +9,22 @@ public class LightController : MonoBehaviour
     [SerializeField] private float lookSpeed = 2.0f;
     [SerializeField] private float lookXLimit = 45.0f;
 
+    AudioController audioController;
+
+    private void Awake()
+    {
+        audioController = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioController>();
+    }
+
     void Start()
     {
         flashlight.gameObject.SetActive(false);
         InputController.Instance().OnFPressed += ToggleFlashlight;
     }
 
-    public void ToggleFlashlight() {
+    public void ToggleFlashlight()
+    {
+        audioController.PlaySFX(audioController.lightSwitch);
         flashlight.gameObject.SetActive(!flashlight.gameObject.activeSelf);
     }
 

@@ -7,6 +7,12 @@ public class TimerController : BaseController<TimerController>
 {
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float remainingTime;
+    AudioController audioController;
+
+    private void Awake()
+    {
+        audioController = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioController>();
+    }
 
 
     void Start()
@@ -30,6 +36,7 @@ public class TimerController : BaseController<TimerController>
         else if (remainingTime < 0)
         {
             remainingTime = 0;
+            audioController.PlaySFX(audioController.reveil);
             timerText.color = Color.red;
         }
 
