@@ -12,8 +12,8 @@ public class UIController : BaseController<UIController>
     // Start is called before the first frame update
     void Start()
     {
-        // add the TogglePauseScreen function to the OnPPressed event
-        InputController.Instance().OnPPressed += TogglePauseScreen;
+        // add the TogglePauseScreen function to the OnEscapePressed event
+        InputController.Instance().OnEscapePressed += TogglePauseScreen;
     }
 
     // quit the game

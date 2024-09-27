@@ -11,8 +11,8 @@ public class TimerController : BaseController<TimerController>
 
     void Start()
     {
-        // on ajoute la fonction TogglePause à l'événement OnPPressed
-        InputController.Instance().OnPPressed += TogglePause;
+        // on ajoute la fonction TogglePause à l'événement OnEscapePressed
+        InputController.Instance().OnEscapePressed += TogglePause;
     }
 
     private void TogglePause()
