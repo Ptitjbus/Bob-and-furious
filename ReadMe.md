@@ -21,7 +21,8 @@ Avoir tous les objets pour aller en cours avant la fin du temps.
 
 -> Importer l'asset "Food FREE - Low Poly Asset Pack by ithappy" - https://assetstore.unity.com/packages/3d/props/food/food-free-low-poly-asset-pack-by-ithappy-260726
 
-L'importation n'est pas complète ! Il faut ensuite 
+L'importation n'est pas complète ! Il faut ensuite cliquer sur :
+
 Window > Rendering > Render Pipeline Converter > Selectionner "Rendering Settings" + "Material Upgrade" et cliquer sur "Initialize and convert"
 
 Et maintenant vous pouvez jouer !
