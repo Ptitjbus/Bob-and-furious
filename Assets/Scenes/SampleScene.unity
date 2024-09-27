@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731716, g: 0.13414738, b: 0.121078566, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1671,11 +1671,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 678169579}
   SFXSource: {fileID: 1541401641}
-  background: {fileID: 8300000, guid: f672ec400361440e1b8cab0e0f9873fc, type: 3}
-  collectable: {fileID: 8300000, guid: 02f98902d77f7431cb0c64b9fe4744fc, type: 3}
-  reveil: {fileID: 8300000, guid: d31480e37a5c540b6bd72c21fa25c08b, type: 3}
-  reveilBaillement: {fileID: 8300000, guid: 60c788e17a2294e88b437a27e2b8056e, type: 3}
-  lightSwitch: {fileID: 8300000, guid: 5c9c4551d31164084982851d42eefe97, type: 3}
+  background: {fileID: 8300000, guid: edb8c8a4407034c1c9c1bf2544d79356, type: 3}
+  collectable: {fileID: 8300000, guid: b90474ebe5323436c8d641fee09fa148, type: 3}
+  reveil: {fileID: 8300000, guid: ff0e5e7b825be4c1f8933c7fd6f88d79, type: 3}
+  reveilBaillement: {fileID: 8300000, guid: 9fc90c1590bd14234acaeff6a34a750c, type: 3}
+  lightSwitch: {fileID: 8300000, guid: d0ba01ac5f6aa46e9b6b987873d95954, type: 3}
 --- !u!4 &490088945
 Transform:
   m_ObjectHideFlags: 0
